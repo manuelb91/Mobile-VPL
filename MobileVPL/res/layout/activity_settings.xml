@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="it.unibz.mobilevpl.activities.SettingsActivity" >
+
+    <RadioGroup
+        android:id="@+id/settings_html_source_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/settings_html_source_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_html_source_local" 
+            android:onClick="setLocal"/>
+
+        <RadioButton
+            android:id="@+id/settings_html_source_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_html_source_remote" 
+            android:onClick="setRemote"/>
+    </RadioGroup>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView
+	        android:id="@+id/settings_html_source_remote_address_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/settings_html_source_remote_address_label"
+	        android:labelFor="@+id/settings_html_source_remote_address"
+	        android:layout_marginBottom="@dimen/new_project_margin_dim"/>
+	    
+	    <EditText
+	        android:id="@+id/settings_html_source_remote_address"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="text"/>
+
+    </LinearLayout>
+</LinearLayout>

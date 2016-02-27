@@ -1,0 +1,316 @@
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.device.swt.R31Enhance <clinit>
+INFORMATION: Advanced SWT graphics functions enabled.
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+INFORMATION: Using graphics context org.eclipse.swt.graphics.GC@GC {-1828644646}
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:31 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+INFORMATION: Using graphics context org.eclipse.swt.graphics.GC@GC {704715203}
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:38 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:39 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:40 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:41 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+INFORMATION: Using graphics context org.eclipse.swt.graphics.GC@GC {1308694833}
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:49 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:50 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:51 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:58 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:07:59 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:08:00 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+INFORMATION: Using graphics context org.eclipse.swt.graphics.GC@GC {1275140250}
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] has been loaded successfully.
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:08:33 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:09:05 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.device.swt.SwtDisplayServer <init>
+INFORMATION: SWT Display Server: win32 v4.430
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.device.swt.SwtRendererImpl setProperty
+INFORMATION: Using graphics context org.eclipse.swt.graphics.GC@GC {721492462}
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.StorageUnitRenderScript] has been loaded successfully.
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:09:25 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.device.swing.SwingDisplayServer <init>
+INFORMATION: SWING Display Server: Oracle Corporation v1.8.0_20
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: Trying to load Chart Java event handler class...
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.script.AbstractScriptHandler register
+INFORMATION: A Chart Java event handler class [class org.eclipse.mat.impl.chart.LabelRenderScript] has been loaded successfully.
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.device.swing.SwingRendererImpl prepareGraphicsContext
+INFORMATION: Using graphics context sun.java2d.SunGraphics2D[font=java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12],color=java.awt.Color[r=255,g=255,b=255]]
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.render.EmptyWithoutAxes renderSeries
+INFORMATION: org.eclipse.birt.chart.render.EmptyWithoutAxes: renderSeries() [1/2]
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.extension.render.Pie renderSeries
+INFORMATION: {0}: renderSeries() [{1}/{2}]org.eclipse.birt.chart.extension.render.Pie22
+Feb 20, 2016 11:10:00 AM org.eclipse.birt.chart.device.image.JavaxImageIOWriter after
+INFORMATION: Using {0} image writer {1}pngcom.sun.imageio.plugins.png.PNGImageWriter

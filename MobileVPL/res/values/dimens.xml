@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Main Activity -->
+	<dimen name="main_new_project_dim">230dp</dimen>
+	<dimen name="main_open_project_dim">230dp</dimen>
+	<dimen name="main_margin_dim">20dp</dimen>
+
+	<!-- New Project Activity -->
+	<dimen name="new_project_name_input_dim">230dp</dimen>
+	<dimen name="new_project_create_dim">230dp</dimen>
+	<dimen name="new_project_margin_dim">20dp</dimen>
+	
+</resources>

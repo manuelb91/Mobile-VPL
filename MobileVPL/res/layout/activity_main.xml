@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="it.unibz.mobilevpl.activities.MainActivity" >
+
+    <Button
+        android:id="@+id/main_new_project"
+        android:layout_width="@dimen/main_new_project_dim"
+        android:layout_height="wrap_content"
+        android:text="@string/main_new_project_string"
+        android:clickable="true"
+        android:onClick="createProject"/>
+    
+    <Button
+        android:id="@+id/main_open_project"
+        android:layout_width="@dimen/main_open_project_dim"
+        android:layout_height="wrap_content"
+        android:text="@string/main_open_project_string"
+        android:layout_marginTop="@dimen/main_margin_dim"
+        android:clickable="true"
+        android:onClick="openProject"/>
+
+</LinearLayout>

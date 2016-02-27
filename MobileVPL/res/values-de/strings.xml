@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Scratch</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <!-- Main Activity -->
+    <string name="main_new_project_string">Neues Projekt erstellen</string>
+    <string name="main_open_project_string">Projekt öffnen</string>
+    <string name="main_no_existing_projects_string">Es existiert derzeit kein Projekt</string>
+
+    <!-- New Project Activity -->
+    <string name="title_activity_new_project">Neues Projekt erstellen</string>
+    <string name="new_project_name_string">Names des Projektes:</string>
+    <string name="new_project_create_string">Projekt erstellen</string>
+    <string name="new_project_dialog_title_string">Achtung</string>
+    <string name="new_project_dialog_message_string">Der Name des Projektes muss eingegeben werden</string>
+    <string name="new_project_project_exists">Es existiert bereits ein Projekt mit diesem Name</string>
+
+    <!-- Open Project Activity -->
+    <string name="title_activity_open_project">Projekt öffnen</string>
+    <string name="open_project_open_string">Projekt öffnen</string>
+
+    <!-- Animation Activity -->
+    <string name="title_activity_animation">Animation</string>
+    <string name="animation_stop_execution">Animation unterbrechen</string>
+
+    <!-- Editor Activity -->
+    <string name="title_activity_editor">Editor</string>
+    <string name="editor_store_string">Speichern</string>
+    <string name="editor_animation_string">Animation beginnen</string>
+    <string name="editor_image_string">Bild wählen</string>
+    <string name="editor_sound_string">Ton wählen</string>
+    <string name="editor_context_menu_title">Optionen</string>
+    <string name="editor_context_menu_show_picture">Bild anzeigen</string>
+    <string name="editor_context_menu_add_sprite">Neues Sprite hinzufügen</string>
+    <string name="editor_context_menu_select_picture">Bild wählen</string>
+    <string name="editor_context_menu_delete">Löschen</string>
+    <string name="editor_animation_empty">Das Projekt is leer</string>
+    <string name="editor_context_menu_choose_coordinates">Koordinaten wählen</string>
+    <string name="editor_html_message_language">de</string>
+    <string name="editor_error_empty_project">Das Project is leer</string>
+    <string name="editor_error_missing_images">Die Bilder müssen bei einigen Szenen und Objekte gesetzt werden</string>
+    
+    <!-- Sound Activity -->
+    <string name="title_activity_sound">Töne verwalten</string>
+    
+    <!-- Project Editor Activity -->
+    <string name="title_activity_project_editor">Projekteditor</string>
+    <string name="project_editor_editor_tab_title">Editor</string>
+    <string name="project_editor_sound_tab_title">Töne</string>
+    
+    <!-- Dialog Create Sprite -->
+    <string name="dialog_sprite_label_title">Koordinaten wählen</string>
+    <string name="dialog_sprite_label_x">X</string>
+    <string name="dialog_sprite_label_y">Y</string>
+    <string name="dialog_sprite_label_create">OK</string>
+    <string name="dialog_error_x_y">Die eingegebenen Koordinaten sind ungültig</string>
+    
+    <!-- Animation Activity -->
+	<string name="animation_error_sprite_index">Das ausgewählte Sprite is ungültig</string>
+	
+	<!-- Settings Activity -->
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="settings_html_source_local">Lokal</string>
+    <string name="settings_html_source_remote">Remote</string>
+    <string name="settings_html_source_remote_address_label">Adresse:</string>
+</resources>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+	<script src="blockly_compressed.js"  type="text/javascript"></script>
+    <script src="blocks_compressed.js"  type="text/javascript"></script>
+    <script src="code.js" type="text/javascript"></script>
+	<script src="en.js" type="text/javascript"></script>
+    <script>
+    	function generateCodeForBlocks() {
+			var xml = Blockly.Xml.workspaceToDom(workspace);
+			var xml_text = Blockly.Xml.domToText(xml);
+			window.cpjs.sendXMLToAndroid(xml_text);
+    	}
+		
+		function loadCodeForBlocks(xml_text) {
+			var xml = Blockly.Xml.textToDom(xml_text);
+			Blockly.Xml.domToWorkspace(workspace, xml);
+		}
+    </script>
+    <script>
+    	Blockly.Blocks['when_flag_pressed'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("When")
+              .appendField(new Blockly.FieldImage("flag.png", 15, 15, "*"))
+              .appendField("clicked");
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['when_sprite_clicked'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("When sprite clicked");
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['wait_for_seconds'] = {
+        init: function() {
+          this.appendValueInput("waiting_time")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("wait for seconds");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['repeat_n_times'] = {
+        init: function() {
+          this.appendStatementInput("repetition_times")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("repeat n times");
+          this.appendValueInput("NAME")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("n");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['repeat_forever'] = {
+        init: function() {
+          this.appendStatementInput("repetition_times")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("repeat forever");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['broadcast_message'] = {
+        init: function() {
+          this.appendValueInput("message")
+              .setCheck("String")
+              .appendField("broadcast");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['broadcast_message_and_wait'] = {
+        init: function() {
+          this.appendValueInput("message")
+              .setCheck("String")
+              .appendField("broadcast and wait");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['when_message_received'] = {
+        init: function() {
+          this.appendValueInput("message")
+              .setCheck("String")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("When I receive");
+          this.setNextStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['stop_script'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("stop script");
+          this.setPreviousStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['stop_all'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("stop all")
+              .appendField(new Blockly.FieldImage("stop.png", 15, 15, "*"));
+          this.setPreviousStatement(true);
+          this.setColour(65);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['movement'] = {
+        init: function() {
+          this.appendValueInput("steps")
+              .setCheck("Number")
+              .appendField("move steps");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['turn_clockwise'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("turn")
+              .appendField(new Blockly.FieldImage("clockwise.png", 15, 15, "*"))
+              .appendField("degrees")
+              .appendField(new Blockly.FieldAngle("90"), "degrees");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['turn_counter_clockwise'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("turn")
+              .appendField(new Blockly.FieldImage("counterclockwise.png", 15, 15, "*"))
+              .appendField("degrees")
+              .appendField(new Blockly.FieldAngle("90"), "degrees");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['point_direction'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("point in direction")
+              .appendField(new Blockly.FieldAngle("90"), "degrees");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['point_towards'] = {
+        init: function() {
+          this.appendDummyInput("list")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("point towards")
+              .appendField(new Blockly.FieldDropdown([["Touch", "-1"]<OPTIONS>]), "object");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['go_to_xy'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("go to");
+          this.appendValueInput("x")
+              .setCheck("Number")
+              .appendField("x");
+          this.appendValueInput("y")
+              .setCheck("Number")
+              .appendField("y");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['go_to'] = {
+        init: function() {
+          this.appendDummyInput("list")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("go to")
+              .appendField(new Blockly.FieldDropdown([["Touch", "-1"]<OPTIONS>]), "object");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['glide_to_xy_seconds'] = {
+        init: function() {
+          this.appendDummyInput()
+              .appendField("glide in seconds to x y");
+          this.appendValueInput("seconds")
+              .setCheck("Number")
+              .appendField("secs");
+          this.appendValueInput("x")
+              .setCheck("Number")
+              .appendField("x");
+          this.appendValueInput("y")
+              .setCheck("Number")
+              .appendField("y");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['change_x'] = {
+        init: function() {
+          this.appendValueInput("distance")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("change x by");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['change_y'] = {
+        init: function() {
+          this.appendValueInput("distance")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("change y by");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['set_x'] = {
+        init: function() {
+          this.appendValueInput("position")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("set x to");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['set_y'] = {
+        init: function() {
+          this.appendValueInput("position")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("set y to");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['bounce_if_on_edge'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("if on edge, bounce");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(220);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['play_sound'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("play sound")
+              .appendField(new Blockly.FieldDropdown([<SOUNDLIST>]), "sound");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(300);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['play_sound_until_done'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("play sound")
+              .appendField(new Blockly.FieldDropdown([<SOUNDLIST>]), "sound")
+              .appendField("until done");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(300);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['stop_all_sounds'] = {
+        init: function() {
+          this.appendDummyInput()
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("stop all sounds");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(300);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['change_volume_by'] = {
+        init: function() {
+          this.appendValueInput("volume")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("change volume by");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(300);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+      Blockly.Blocks['set_volume_to_percentage'] = {
+        init: function() {
+          this.appendValueInput("volume")
+              .setCheck("Number")
+              .setAlign(Blockly.ALIGN_RIGHT)
+              .appendField("change volume by");
+          this.setPreviousStatement(true);
+          this.setNextStatement(true);
+          this.setColour(300);
+          this.setTooltip('');
+          this.setHelpUrl('http://www.example.com/');
+        }
+      };
+
+    </script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      #blocklyDiv {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <style>
+      var blocks = Blockly.mainWorkspace.getAllBlocks();
+
+      $.each(blocks,function(i,block) {
+          block.svg_.width = block.svg_.width * 1.5;
+          block.svg_.height = block.svg_.height * 1.5;
+      });
+
+      Blockly.fireUiEvent(window, 'resize');
+    </style>
+  </head>
+  <body>
+    <div id="blocklyDiv"></div>
+
+    <xml id="toolbox" style="display: none">
+      <category name="Values">
+		<block type="math_number"></block>
+		<block type="text"></block>
+      </category>
+      <category name="Control">
+        <block type="when_flag_pressed"></block>
+        <block type="when_sprite_clicked"></block>
+        <block type="wait_for_seconds"></block>
+        <block type="repeat_n_times"></block>
+        <block type="repeat_forever"></block>
+        <block type="broadcast_message"></block>
+        <block type="broadcast_message_and_wait"></block>
+        <block type="when_message_received"></block>
+        <block type="stop_script"></block>
+        <block type="stop_all"></block>
+      </category>
+      <category name="Motion">
+        <block type="movement"></block>
+        <block type="turn_clockwise"></block>
+        <block type="turn_counter_clockwise"></block>
+        <block type="point_direction"></block>
+        <block type="point_towards"></block>
+        <block type="go_to_xy"></block>
+        <block type="go_to"></block>
+        <block type="glide_to_xy_seconds"></block>
+        <block type="change_x"></block>
+        <block type="set_x"></block>
+        <block type="change_y"></block>
+        <block type="set_y"></block>
+        <block type="bounce_if_on_edge"></block>
+      </category>
+	  <category name="Sound">
+        <block type="play_sound"></block>
+        <block type="play_sound_until_done"></block>
+        <block type="stop_all_sounds"></block>
+        <block type="change_volume_by"></block>
+        <block type="set_volume_to_percentage"></block>
+      </category>
+
+    </xml>
+
+    <script>
+		var workspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox')});
+    </script>
+  </body>
+</html>

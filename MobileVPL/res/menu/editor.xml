@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.unibz.mobilescratch.EditorActivity" >
+
+    <item
+        android:id="@+id/action_add_scene"
+        android:orderInCategory="100"
+        android:title="@string/editor_image_string"
+        android:icon="@drawable/ic_add_scene"
+        android:showAsAction="ifRoom"
+        android:enabled="true"/>
+    
+    <item
+        android:id="@+id/action_add_sound"
+        android:orderInCategory="100"
+        android:title="@string/editor_sound_string"
+        android:icon="@drawable/ic_add_sound"
+        android:showAsAction="ifRoom"
+        android:enabled="true"/>
+    
+    <item
+        android:id="@+id/action_store"
+        android:orderInCategory="100"
+        android:title="@string/editor_store_string"
+        android:icon="@drawable/ic_store"
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/action_animation"
+        android:orderInCategory="100"
+        android:title="@string/editor_animation_string"
+        android:icon="@drawable/ic_animation"
+        android:showAsAction="ifRoom"/>
+
+</menu>
