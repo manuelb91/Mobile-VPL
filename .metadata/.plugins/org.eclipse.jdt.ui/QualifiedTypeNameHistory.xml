@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.app.Application"/>
 <fullyQualifiedTypeName name="android.webkit.WebSettings.RenderPriority"/>
 <fullyQualifiedTypeName name="org.xwalk.core.XWalkActivity"/>
 <fullyQualifiedTypeName name="it.unibz.mobilescratch.activities.SoundActivity"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="it.unibz.mobilescratch.util.ContextManager"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="it.unibz.mobilescratch.activities.EditorActivity"/>
+<fullyQualifiedTypeName name="it.unibz.mobilevpl.definition.BlockDefinition.BlockType"/>
 </qualifiedTypeNameHistroy>

@@ -1,8 +1,8 @@
 package it.unibz.mobilevpl.object;
 
+import it.unibz.mobilevpl.definition.BlockDefinition.BlockType;
+import it.unibz.mobilevpl.definition.BlockDefinition.OperationType;
 import it.unibz.mobilevpl.exception.AnimationExecutionException;
-import it.unibz.mobilevpl.object.Block.BlockType;
-import it.unibz.mobilevpl.object.Block.OperationType;
 import it.unibz.mobilevpl.util.ContextManager;
 import it.unibz.mobilevpl.util.FileManager;
 
@@ -14,7 +14,6 @@ import java.util.List;
 
 import org.andengine.audio.music.MusicManager;
 import org.andengine.audio.sound.SoundManager;
-import org.andengine.engine.camera.Camera;
 import org.andengine.entity.scene.background.SpriteBackground;
 import org.andengine.opengl.texture.ITexture;
 import org.andengine.opengl.texture.TextureManager;

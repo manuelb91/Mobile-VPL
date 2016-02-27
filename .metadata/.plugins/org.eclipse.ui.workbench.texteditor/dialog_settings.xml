@@ -2,22 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="this.arrived = true;" key="selection"/>
+		<item value="OperationType" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Block.OperationType"/>
+			<item value="Block.BlockType"/>
+			<item value="&quot;operator&quot;"/>
+			<item value="&quot;sound&quot;"/>
+			<item value="&quot;motion&quot;"/>
+			<item value="&quot;event&quot;"/>
 			<item value="this.arrived = true;"/>
 			<item value="sprite.addblock"/>
-			<item value="storeblockstructure"/>
-			<item value="prepareall"/>
-			<item value="getdescription"/>
-			<item value="setdescription"/>
-			<item value="Number"/>
-			<item value="log.d"/>
 		</list>
 		<list key="replacehistory">
+			<item value="OperationType"/>
+			<item value="BlockType"/>
+			<item value="BlockDefinition.OperationType"/>
+			<item value="BlockType.OPERATOR.getValue()"/>
+			<item value="BlockType.SOUND.getValue()"/>
+			<item value="BlockType.MOTION.getValue()"/>
+			<item value="BlockType.EVENT.getValue()"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -2,9 +2,9 @@ package it.unibz.mobilevpl.object;
 
 import it.unibz.mobilevpl.block.MotionBlock;
 import it.unibz.mobilevpl.block.SoundBlock;
+import it.unibz.mobilevpl.definition.BlockDefinition.BlockType;
+import it.unibz.mobilevpl.definition.BlockDefinition.OperationType;
 import it.unibz.mobilevpl.exception.AnimationExecutionException;
-import it.unibz.mobilevpl.object.Block.BlockType;
-import it.unibz.mobilevpl.object.Block.OperationType;
 import it.unibz.mobilevpl.util.ContextManager;
 import it.unibz.mobilevpl.util.FileManager;
 
@@ -28,7 +28,6 @@ import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.util.adt.io.in.IInputStreamOpener;
 
 import android.content.res.Resources;
-import android.util.Log;
 
 import com.orm.SugarRecord;
 import com.orm.dsl.Ignore;
@@ -229,15 +228,15 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 			Block block = this.getBlocks().get(this.index);
 			List<Parameter> parameters = block.getParameters();
 
-			if(block.getBlockType() == Block.BlockType.CONTROL) {
+			if(block.getBlockType() == BlockType.CONTROL) {
 
-			} else if(block.getBlockType() == Block.BlockType.DATA) {
+			} else if(block.getBlockType() == BlockType.DATA) {
 				
-			} else if(block.getBlockType() == Block.BlockType.EVENT) {
-				if(block.getOperationType() == Block.OperationType.WHEN_FALG_PRESSED) {
+			} else if(block.getBlockType() == BlockType.EVENT) {
+				if(block.getOperationType() == OperationType.WHEN_FALG_PRESSED) {
 					this.activate();
 					this.index++;
-				} else if(block.getOperationType() == Block.OperationType.WHEN_SPRITE_CLICKED) {
+				} else if(block.getOperationType() == OperationType.WHEN_SPRITE_CLICKED) {
 					float xStart = this.sprite.getX() - (this.sprite.getWidth()/2);
 					float xStop = this.sprite.getX() + (this.sprite.getWidth()/2);
 					float yStart = this.sprite.getY() - (this.sprite.getHeight()/2);
@@ -254,7 +253,7 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 						this.index++;
 						this.spriteClicked = false;
 					}
-				} else if(block.getOperationType() == Block.OperationType.WAIT_FOR_SECONDS) {
+				} else if(block.getOperationType() == OperationType.WAIT_FOR_SECONDS) {
 					if(!this.waitingTimeSet) {
 						this.waitingTime = parameters.get(0).evaluateNumericValue();
 						this.waitingTimeSet = true;
@@ -265,14 +264,14 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 					} else {
 						this.waitingTime -= elapsedTime;
 					}
-				} else if(block.getOperationType() == Block.OperationType.REPEAT_N_TIMES) {
+				} else if(block.getOperationType() == OperationType.REPEAT_N_TIMES) {
 					
-				} else if(block.getOperationType() == Block.OperationType.REPEAT_FOREVER) {
+				} else if(block.getOperationType() == OperationType.REPEAT_FOREVER) {
 					
-				} else if(block.getOperationType() == Block.OperationType.BROADCAST_MESSAGE) {
+				} else if(block.getOperationType() == OperationType.BROADCAST_MESSAGE) {
 					this.activateOtherSceneSpritesWithMessage(parameters.get(0).evaluateTextValue());
 					this.index++;
-				} else if(block.getOperationType() == Block.OperationType.BROADCAST_MESSAGE_AND_WAIT) {
+				} else if(block.getOperationType() == OperationType.BROADCAST_MESSAGE_AND_WAIT) {
 					if(!this.broadcastMessageSent) {
 						this.activateOtherSceneSpritesWithMessage(parameters.get(0).evaluateTextValue());
 						this.broadcastMessageSent = true;
@@ -288,54 +287,54 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 					} else {
 						this.waitingTime -= elapsedTime;
 					}
-				} else if(block.getOperationType() == Block.OperationType.WHEN_MESSAGE_RECEIVED) {
+				} else if(block.getOperationType() == OperationType.WHEN_MESSAGE_RECEIVED) {
 					//Empty since sprite is activated when message is sent
-				} else if(block.getOperationType() == Block.OperationType.STOP_SCRIPT) {
+				} else if(block.getOperationType() == OperationType.STOP_SCRIPT) {
 					this.operationsTerminated = true;
-				} else if(block.getOperationType() == Block.OperationType.STOP_ALL) {
+				} else if(block.getOperationType() == OperationType.STOP_ALL) {
 					this.operationsTerminated = true;
 					ContextManager.TERMINATE = true;
 				}
-			} else if(block.getBlockType() == Block.BlockType.LOOK) {
+			} else if(block.getBlockType() == BlockType.LOOK) {
 				
-			} else if(block.getBlockType() == Block.BlockType.MOTION) {
+			} else if(block.getBlockType() == BlockType.MOTION) {
 				if(this.motion.isArrived()) {
 					this.motion.setArrived(false);
-					if(block.getOperationType() == Block.OperationType.MOVEMENT) {
+					if(block.getOperationType() == OperationType.MOVEMENT) {
 						this.motion.moveSprite(parameters.get(0).evaluateNumericValue(), parameters.get(1).evaluateNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.TURN_CLOCKWISE) {
+					} else if(block.getOperationType() == OperationType.TURN_CLOCKWISE) {
 						this.motion.turnDegrees(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.TURN_COUNTER_CLOCKWISE) {
+					} else if(block.getOperationType() == OperationType.TURN_COUNTER_CLOCKWISE) {
 						this.motion.turnDegrees(parameters.get(0).getNumericValue() * -1);
-					} else if(block.getOperationType() == Block.OperationType.POINT_DIRECTION) {
+					} else if(block.getOperationType() == OperationType.POINT_DIRECTION) {
 						this.motion.pointDirection(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.POINT_TOWARDS_TOUCH) {
+					} else if(block.getOperationType() == OperationType.POINT_TOWARDS_TOUCH) {
 						this.motion.moveSprite(ContextManager.X_POSITION, ContextManager.Y_POSITION);
-					} else if(block.getOperationType() == Block.OperationType.POINT_TOWARDS_SPRITE) {
+					} else if(block.getOperationType() == OperationType.POINT_TOWARDS_SPRITE) {
 						this.motion.pointDirection(parameters.get(0).getSprite().getSprite());
-					} else if(block.getOperationType() == Block.OperationType.GO_TO_XY) {
+					} else if(block.getOperationType() == OperationType.GO_TO_XY) {
 						this.motion.moveSprite(parameters.get(0).getNumericValue(), parameters.get(1).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.GO_TO) {
+					} else if(block.getOperationType() == OperationType.GO_TO) {
 						int spriteIndex = (int)parameters.get(0).evaluateNumericValue();
 						if (spriteIndex == -1) {
 							this.motion.moveSprite(ContextManager.X_POSITION, ContextManager.Y_POSITION);
 						} else {
 							this.motion.goTo(this.getSpriteFromSameScene(spriteIndex).getSprite());
 						}
-					} else if(block.getOperationType() == Block.OperationType.GLIDE_TO_XY_SECONDS) {
+					} else if(block.getOperationType() == OperationType.GLIDE_TO_XY_SECONDS) {
 						this.motion.glideToXYSeconds(parameters.get(0).evaluateNumericValue(), parameters.get(1).evaluateNumericValue(), 
 								parameters.get(2).evaluateNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.CHANGE_X) {
+					} else if(block.getOperationType() == OperationType.CHANGE_X) {
 						this.motion.changeXBy(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.SET_X) {
+					} else if(block.getOperationType() == OperationType.SET_X) {
 						this.motion.setXTo(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.CHANGE_Y) {
+					} else if(block.getOperationType() == OperationType.CHANGE_Y) {
 						this.motion.changeYBy(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.SET_Y) {
+					} else if(block.getOperationType() == OperationType.SET_Y) {
 						this.motion.setYTo(parameters.get(0).getNumericValue());
-					} else if(block.getOperationType() == Block.OperationType.BOUNCE_IF_ON_EDGE) {
+					} else if(block.getOperationType() == OperationType.BOUNCE_IF_ON_EDGE) {
 						this.motion.bounceIfOnEdge();
-					} else if(block.getOperationType() == Block.OperationType.ROTATION_STYLE) {
+					} else if(block.getOperationType() == OperationType.ROTATION_STYLE) {
 
 					}
 				} else {
@@ -343,12 +342,12 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 					if(this.motion.isArrived())
 						this.index++;
 				}
-			} else if(block.getBlockType() == Block.BlockType.PEN) {
+			} else if(block.getBlockType() == BlockType.PEN) {
 
-			} else if(block.getBlockType() == Block.BlockType.SENSING) {
+			} else if(block.getBlockType() == BlockType.SENSING) {
 
-			} else if(block.getBlockType() == Block.BlockType.SOUND) {
-				if(block.getOperationType() == Block.OperationType.PLAY_SOUND) {
+			} else if(block.getBlockType() == BlockType.SOUND) {
+				if(block.getOperationType() == OperationType.PLAY_SOUND) {
 					if(this.stoppableMusicList == null)
 						this.stoppableMusicList = new LinkedList<Music>();
 					this.stoppableMusicList.add(SoundBlock.playSound(musicManager, parameters.get(0).evaluateTextValue()));
@@ -356,16 +355,16 @@ public class Sprite extends SugarRecord<Sprite> implements Serializable {
 					if(this.allMusicList == null)
 						this.allMusicList = new LinkedList<Music>();
 					this.allMusicList.add(SoundBlock.playSound(musicManager, parameters.get(0).evaluateTextValue()));
-				} else if(block.getOperationType() == Block.OperationType.PLAY_SOUND_UNTIL_DONE) {
+				} else if(block.getOperationType() == OperationType.PLAY_SOUND_UNTIL_DONE) {
 					//The music file is not added to the list since it has not to be stopped
 					if(this.allMusicList == null)
 						this.allMusicList = new LinkedList<Music>();
 					this.allMusicList.add(SoundBlock.playSound(musicManager, parameters.get(0).evaluateTextValue()));
-				} else if(block.getOperationType() == Block.OperationType.STOP_ALL_SOUNDS) {
+				} else if(block.getOperationType() == OperationType.STOP_ALL_SOUNDS) {
 					SoundBlock.stopSound(this.stoppableMusicList);
-				} else if(block.getOperationType() == Block.OperationType.CHANGE_VOLUME_BY) {
+				} else if(block.getOperationType() == OperationType.CHANGE_VOLUME_BY) {
 					SoundBlock.setVolumeToPercentage(musicManager, soundManager, parameters.get(0).evaluateNumericValue());
-				} else if(block.getOperationType() == Block.OperationType.SET_VOLUME_TO_PERCENTAGE) {
+				} else if(block.getOperationType() == OperationType.SET_VOLUME_TO_PERCENTAGE) {
 					SoundBlock.changeVolumeBy(musicManager, soundManager, parameters.get(0).evaluateNumericValue());
 				}
 			}

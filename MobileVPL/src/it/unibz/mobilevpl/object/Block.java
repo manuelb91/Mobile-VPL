@@ -1,117 +1,17 @@
 package it.unibz.mobilevpl.object;
 
 import it.unibz.mobilevpl.block.OperatorBlock;
+import it.unibz.mobilevpl.definition.BlockDefinition.BlockType;
+import it.unibz.mobilevpl.definition.BlockDefinition.OperationType;
 import it.unibz.mobilevpl.object.Parameter.ParameterType;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.orm.SugarRecord;
 import com.orm.dsl.Ignore;
 
 public class Block extends SugarRecord<Block> implements Serializable {
-	
-	public enum BlockType {
-		CONTROL("control"), DATA("data"), EVENT("event"), LOOK("look"), MOTION("motion"), 
-		OPERATOR("operator"), PEN("pen"), SENSING("sensing"), SOUND("sound");
-		
-		private String value;
-		
-		private static final Map<String, BlockType> lookup = new HashMap<String, BlockType>();
-        static {
-            for (BlockType blockType : BlockType.values())
-                lookup.put(blockType.getValue(), blockType);
-        }
-		
-		private BlockType(String value) {
-			this.value = value;
-		}
-		
-		public String getValue() {
-			return this.value;
-		}
-		
-		public static BlockType get(String value) {
-            return lookup.get(value);
-        }
-	}
-	
-	public enum OperationType {
-		WHEN_FALG_PRESSED("event", "when_flag_pressed", false), WHEN_SPRITE_CLICKED("event", "when_sprite_clicked", false), 
-		WAIT_FOR_SECONDS("event", "wait_for_seconds", false), REPEAT_N_TIMES("event", "repeat_n_times", false), 
-		REPEAT_FOREVER("event", "repeat_forever", false), BROADCAST_MESSAGE("event", "broadcast_message", false), 
-		BROADCAST_MESSAGE_AND_WAIT("event", "broadcast_message_and_wait", false), 
-		WHEN_MESSAGE_RECEIVED("event", "when_message_received", false), 
-		STOP_SCRIPT("event", "stop_script", false), STOP_ALL("event", "stop_all", false),
-		
-		MOVEMENT("motion", "movement", false), TURN_CLOCKWISE("motion", "turn_clockwise", false), 
-		TURN_COUNTER_CLOCKWISE("motion", "turn_counter_clockwise", false), POINT_DIRECTION("motion", "point_direction", false), 
-		POINT_TOWARDS_TOUCH("motion", "point_towards_touch", false), POINT_TOWARDS_SPRITE("motion", "point_towards_sprite", false),
-		GO_TO_XY("motion", "go_to_xy", true), GO_TO("motion", "go_to", false), 
-		GLIDE_TO_XY_SECONDS("motion", "glide_to_xy_seconds", true), CHANGE_X("motion", "change_x", true), SET_X("motion", "set_x", true), 
-		CHANGE_Y("motion", "change_y", true), SET_Y("motion", "set_y", true), BOUNCE_IF_ON_EDGE("motion", "bounce_if_on_edge", false), 
-		ROTATION_STYLE("motion", "RotationStyle", false),
-		
-		PLAY_SOUND("sound", "play_sound", false), PLAY_SOUND_UNTIL_DONE("sound", "play_sound_until_done", false), 
-		STOP_ALL_SOUNDS("sound", "stop_all_sounds", false), CHANGE_VOLUME_BY("sound", "change_volume_by", false), 
-		SET_VOLUME_TO_PERCENTAGE("sound", "set_volume_to_percentage", false), 
-		
-		IS_LESS_THAN("operator", "IsLessThan", false), IS_EQUAL_TO("operator", "IsEqualTo", false), 
-		IS_GREATER_THAN("operator", "IsGreaterThan", false), 
-		CONDITION_AND("operator", "ConditionAnd", false), CONDITION_OR("operator", "ConditionOr", false), 
-		CONDITION_NOT("operator", "ConditionNot", false), 
-		ADDITION("operator", "Addition", false), SUBTRACTION("operator", "Subtraction", false), 
-		MULTIPLICATION("operator", "Multiplication", false), 
-		DIVISION("operator", "Division", false), PICK_RANDOM_INTEGER("operator", "PickRandomInteger", false), 
-		PICK_RANDOM_DECIMAL("operator", "PickRandomDecimal", false), JOIN_NUMBER("operator", "JoinNumber", false), 
-		JOIN_TEXT("operator", "JoinText", false), 
-		LETTER_OF_TEXT("operator", "LetterOfText", false), LETTER_OF_NUMBER("operator", "LetterOfNumber", false), 
-		LENGTH_OF_NUMBER("operator", "LengthOfNumber", false), LENGTH_OF_TEXT("operator", "LengthOfText", false),
-		MODULO("operator", "Modulo", false), 
-		ROUND("operator", "Round", false), OPERATION_OF_ABS("operator", "OperationOfAbs", false), 
-		OPERATION_OF_FLOOR("operator", "OperationOfFloor", false), 
-		OPERATION_OF_CEILING("operator", "OperationOfCeiling", false), OPERATION_OF_SQRT("operator", "OperationOfSqrt", false), 
-		OPERATION_OF_SIN("operator", "OperationOfSin", false), OPERATION_OF_COS("operator", "OperationOfCos", false), 
-		OPERATION_OF_TAN("operator", "OperationOfTan", false), OPERATION_OF_ASIN("operator", "OperationOfAsin", false), 
-		OPERATION_OF_ACOS("operator", "OperationOfAcos", false), OPERATION_OF_ATAN("operator", "OperationOfAtan", false), 
-		OPERATION_OF_LN("operator", "OperationOfLn", false), OPERATION_OF_LOG("operator", "OperationOfLog", false), 
-		OPERATION_OF_E("operator", "OperationOfE", false), OPERATION_OF_POW10("operator", "OperationOfPow10", false);
-		
-		private String value;
-		private String type;
-		private boolean containsValues;
-		private boolean containsOptions;
-		
-		private static final Map<String, OperationType> lookup = new HashMap<String, OperationType>();
-        static {
-            for (OperationType operationType : OperationType.values())
-                lookup.put(operationType.getValue(), operationType);
-        }
-		
-		private OperationType(String type, String value, boolean containsValues) {
-			this.type = type;
-			this.value = value;
-			this.containsValues = containsValues;
-		}
-		
-		public String getValue() {
-			return this.value;
-		}
-		
-		public String getType() {
-			return this.type;
-		}
-		
-		public boolean getContainsValues() {
-			return this.containsValues;
-		}
-		
-		public static OperationType get(String value) {
-            return lookup.get(value);
-        }
-	}
 	
 	@Ignore private BlockType blockType;
 	@Ignore private OperationType operationType;
@@ -222,25 +122,25 @@ public class Block extends SugarRecord<Block> implements Serializable {
 	public float evaluateNumericBlock() {
 		float result = 0f;
 		
-		if(this.getOperationType() == Block.OperationType.ADDITION) {
+		if(this.getOperationType() == OperationType.ADDITION) {
 			result = OperatorBlock.addition(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.SUBTRACTION) {
+		} else if(this.getOperationType() == OperationType.SUBTRACTION) {
 			result = OperatorBlock.subtraction(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.MULTIPLICATION) {
+		} else if(this.getOperationType() == OperationType.MULTIPLICATION) {
 			result = OperatorBlock.multiplication(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.DIVISION) {
+		} else if(this.getOperationType() == OperationType.DIVISION) {
 			result = OperatorBlock.division(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.PICK_RANDOM_INTEGER) {
+		} else if(this.getOperationType() == OperationType.PICK_RANDOM_INTEGER) {
 			result = OperatorBlock.randomInteger((int)this.getParameters().get(0).evaluateNumericValue(), 
 					(int)this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.PICK_RANDOM_DECIMAL) {			
+		} else if(this.getOperationType() == OperationType.PICK_RANDOM_DECIMAL) {			
 			result = OperatorBlock.randomFloating(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.JOIN_NUMBER) {
+		} else if(this.getOperationType() == OperationType.JOIN_NUMBER) {
 			Parameter a = this.getParameters().get(0);
 			Parameter b = this.getParameters().get(1);
 			if(a.getParameterType() == ParameterType.NUMBER) {
@@ -254,46 +154,46 @@ public class Block extends SugarRecord<Block> implements Serializable {
 				else
 					result = OperatorBlock.joinNumber(a.getTextValue(), b.getTextValue());
 			}
-		} else if(this.getOperationType() == Block.OperationType.LETTER_OF_NUMBER) {
+		} else if(this.getOperationType() == OperationType.LETTER_OF_NUMBER) {
 			result = OperatorBlock.letterOfNumber((int)this.getParameters().get(0).evaluateNumericValue(), this.getParameters().get(1).evaluateTextValue());
-		} else if(this.getOperationType() == Block.OperationType.LENGTH_OF_NUMBER) {
+		} else if(this.getOperationType() == OperationType.LENGTH_OF_NUMBER) {
 			float decimalNumber = this.getParameters().get(0).evaluateNumericValue();
 			int integerNumber = (int)decimalNumber;
 			result = OperatorBlock.lengthOf((decimalNumber == integerNumber) ? integerNumber : decimalNumber);
-		} else if(this.getOperationType() == Block.OperationType.LENGTH_OF_TEXT) {
+		} else if(this.getOperationType() == OperationType.LENGTH_OF_TEXT) {
 			result = OperatorBlock.lengthOf(this.getParameters().get(0).evaluateTextValue());
-		} else if(this.getOperationType() == Block.OperationType.MODULO) {
+		} else if(this.getOperationType() == OperationType.MODULO) {
 			result = OperatorBlock.modulo(this.getParameters().get(0).evaluateNumericValue(), 
 					this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.ROUND) {
+		} else if(this.getOperationType() == OperationType.ROUND) {
 			result = OperatorBlock.round(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_ABS) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_ABS) {
 			result = OperatorBlock.abs(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_FLOOR) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_FLOOR) {
 			result = OperatorBlock.floor(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_CEILING) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_CEILING) {
 			result = OperatorBlock.ceil(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_SQRT) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_SQRT) {
 			result = OperatorBlock.sqrt(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_SIN) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_SIN) {
 			result = OperatorBlock.sin(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_COS) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_COS) {
 			result = OperatorBlock.cos(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_TAN) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_TAN) {
 			result = OperatorBlock.tan(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_ASIN) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_ASIN) {
 			result = OperatorBlock.asin(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_ACOS) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_ACOS) {
 			result = OperatorBlock.acos(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_ATAN) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_ATAN) {
 			result = OperatorBlock.atan(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_LN) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_LN) {
 			result = OperatorBlock.ln(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_LOG) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_LOG) {
 			result = OperatorBlock.log(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_E) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_E) {
 			result = OperatorBlock.e(this.getParameters().get(0).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.OPERATION_OF_POW10) {
+		} else if(this.getOperationType() == OperationType.OPERATION_OF_POW10) {
 			result = OperatorBlock.pow10(this.getParameters().get(0).evaluateNumericValue());
 		}
 		
@@ -303,17 +203,17 @@ public class Block extends SugarRecord<Block> implements Serializable {
 	public boolean evaluateTruthBlock() {
 		boolean result = false;
 		
-		if(this.getOperationType() == Block.OperationType.IS_LESS_THAN) {
+		if(this.getOperationType() == OperationType.IS_LESS_THAN) {
 			result = OperatorBlock.isLessThan(this.getParameters().get(0).evaluateNumericValue(), this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.IS_EQUAL_TO) {
+		} else if(this.getOperationType() == OperationType.IS_EQUAL_TO) {
 			result = OperatorBlock.isEqualTo(this.getParameters().get(0).evaluateNumericValue(), this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.IS_GREATER_THAN) {
+		} else if(this.getOperationType() == OperationType.IS_GREATER_THAN) {
 			result = OperatorBlock.isGreaterThan(this.getParameters().get(0).evaluateNumericValue(), this.getParameters().get(1).evaluateNumericValue());
-		} else if(this.getOperationType() == Block.OperationType.CONDITION_AND) {
+		} else if(this.getOperationType() == OperationType.CONDITION_AND) {
 			result = OperatorBlock.conditionAnd(this.getParameters().get(0).evaluateTruthValue(), this.getParameters().get(1).evaluateTruthValue());
-		} else if(this.getOperationType() == Block.OperationType.CONDITION_OR) {
+		} else if(this.getOperationType() == OperationType.CONDITION_OR) {
 			result = OperatorBlock.conditionOr(this.getParameters().get(0).evaluateTruthValue(), this.getParameters().get(1).evaluateTruthValue());
-		} else if(this.getOperationType() == Block.OperationType.CONDITION_NOT) {
+		} else if(this.getOperationType() == OperationType.CONDITION_NOT) {
 			result = OperatorBlock.conditionNot(this.getParameters().get(0).evaluateTruthValue());
 		}
 		
@@ -323,7 +223,7 @@ public class Block extends SugarRecord<Block> implements Serializable {
 	public String evaluateTextBlock() {
 		String result = null;
 		
-		if(this.getOperationType() == Block.OperationType.LETTER_OF_TEXT) {
+		if(this.getOperationType() == OperationType.LETTER_OF_TEXT) {
 			result = OperatorBlock.letterOfText((int)this.getParameters().get(0).evaluateNumericValue(), this.getParameters().get(1).evaluateTextValue());
 		}
 		
