@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workingSetManager>
-<workingSet editPageId="org.eclipse.mylyn.tasks.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1439968261064_1" label="MobileScratchTask" name="MobileScratchTask"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1419241850028_0" label="Window Working Set" name="Aggregate for window 1419241850028">
-<workingSet IMemento.internal.id="MobileScratchTask"/>
-</workingSet>
-</workingSetManager>
